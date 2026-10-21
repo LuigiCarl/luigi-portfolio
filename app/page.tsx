@@ -1,16 +1,12 @@
 import {
   ArrowDownRight,
   ArrowUpRight,
-  Braces,
-  Server,
-  Wrench,
 } from "lucide-react";
-import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import ProjectCard from "@/components/ProjectCard";
-import { contactLinks, education, projects, skills } from "@/data/portfolio";
+import TechStack from "@/components/TechStack";
+import { contactLinks, education, projects } from "@/data/portfolio";
 
-const skillIcons = { brackets: Braces, server: Server, wrench: Wrench };
 const copyrightYear = 2026;
 const hasResume = true;
 
@@ -116,38 +112,7 @@ export default function Home() {
               </div>
               <span className="section-note">Always learning <span>↗</span></span>
             </div>
-            <div className="skills-grid">
-              {skills.map((skill) => {
-                const Icon = skillIcons[skill.icon as keyof typeof skillIcons];
-                return (
-                  <article className="skill-card" key={skill.title}>
-                    <div className="skill-icon"><Icon size={20} strokeWidth={1.6} /></div>
-                    <h3>{skill.title}</h3>
-                    <ul className="skill-badge-list">
-                      {skill.items.map(([item, icon]) => (
-                        <li className="skill-badge" key={item}>
-                          {icon ? (
-                            <Image
-                              src={`https://cdn.simpleicons.org/${icon}/c4b5fd`}
-                              alt=""
-                              width={13}
-                              height={13}
-                              unoptimized
-                              aria-hidden="true"
-                            />
-                          ) : (
-                            <span className="skill-badge-mark" aria-hidden="true">
-                              {item === "AWS EC2 (Amazon Elastic Compute Cloud)" ? "AWS" : item.slice(0, 2)}
-                            </span>
-                          )}
-                          {item}
-                        </li>
-                      ))}
-                    </ul>
-                  </article>
-                );
-              })}
-            </div>
+            <TechStack />
             <p className="placeholder-note">This stack reflects technologies used across academic, personal, and capstone work.</p>
           </div>
         </section>

@@ -18,8 +18,13 @@ export type Project = {
 
 export type Skill = {
   title: string;
-  icon: "brackets" | "server" | "wrench";
-  items: Array<readonly [string, string | null]>;
+  icon: "brackets" | "server" | "cloud";
+  items: Array<{
+    name: string;
+    icon: string | null;
+    fallback: string;
+    color: string;
+  }>;
 };
 
 export const skills: Skill[] = [
@@ -27,33 +32,33 @@ export const skills: Skill[] = [
     title: "Frontend",
     icon: "brackets",
     items: [
-      ["React", "react"],
-      ["React Native", "react"],
-      ["Expo", "expo"],
-      ["Next.js", "nextdotjs"],
-      ["TypeScript", "typescript"],
-      ["JavaScript", "javascript"],
-      ["Tailwind CSS", "tailwindcss"],
+      { name: "React", icon: "devicon:react", fallback: "Re", color: "#61dafb" },
+      { name: "React Native", icon: "devicon:reactnative-wordmark", fallback: "RN", color: "#61dafb" },
+      { name: "Expo", icon: "devicon:expo", fallback: "Ex", color: "#ffffff" },
+      { name: "Next.js", icon: "devicon:nextjs", fallback: "N", color: "#ffffff" },
+      { name: "TypeScript", icon: "devicon:typescript", fallback: "TS", color: "#3178c6" },
+      { name: "JavaScript", icon: "devicon:javascript", fallback: "JS", color: "#f7df1e" },
+      { name: "Tailwind CSS", icon: "devicon:tailwindcss", fallback: "TW", color: "#38bdf8" },
     ],
   },
   {
     title: "Backend",
     icon: "server",
     items: [
-      ["PHP", "php"],
-      ["Laravel", "laravel"],
-      ["REST API Development", "fastapi"],
+      { name: "PHP", icon: "devicon:php", fallback: "PHP", color: "#777bb4" },
+      { name: "Laravel", icon: "devicon:laravel", fallback: "La", color: "#ff2d20" },
+      { name: "REST API Development", icon: null, fallback: "API", color: "#a78bfa" },
     ],
   },
   {
-    title: "Developer Tools",
-    icon: "wrench",
+    title: "Developer Tools & Cloud",
+    icon: "cloud",
     items: [
-      ["Git", "git"],
-      ["GitHub", "github"],
-      ["VS Code", null],
-      ["Vercel", "vercel"],
-      ["AWS EC2", null],
+      { name: "Git", icon: "devicon:git", fallback: "Git", color: "#f05032" },
+      { name: "GitHub", icon: "devicon:github", fallback: "GH", color: "#ffffff" },
+      { name: "Visual Studio Code", icon: "devicon:vscode", fallback: "VS", color: "#23a8f2" },
+      { name: "Vercel", icon: "devicon:vercel", fallback: "V", color: "#ffffff" },
+      { name: "AWS EC2", icon: "logos:aws-ec2", fallback: "EC2", color: "#ff9900" },
     ],
   },
 ];
