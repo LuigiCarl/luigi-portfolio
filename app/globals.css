@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 :root {
+  color-scheme: dark;
   --background: #09090b;
   --surface: #151518;
   --surface-raised: #1d1d21;
@@ -11,6 +12,23 @@
   --border-strong: #3f3f46;
   --accent: #8b5cf6;
   --accent-light: #c4b5fd;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color-scheme: light;
+    --background: #fafafa;
+    --surface: #ffffff;
+    --surface-raised: #f4f4f5;
+    --text: #18181b;
+    --muted: #52525b;
+    --faint: #71717a;
+    --border: #e4e4e7;
+    --border-strong: #d4d4d8;
+    --accent: #7c3aed;
+    --accent-light: #6d28d9;
+  }
+
 }
 
 * {
@@ -1391,6 +1409,51 @@ h2 {
     flex-direction: column;
     min-height: auto;
     padding: 25px 0;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .site-header {
+    border-bottom-color: rgba(212, 212, 216, 0.85);
+    background: rgba(250, 250, 250, 0.82);
+  }
+
+  .section-muted {
+    border-block-color: var(--border);
+    background: #f4f4f5;
+  }
+
+  .skill-card {
+    background: rgba(255, 255, 255, 0.82);
+    box-shadow: 0 12px 32px rgba(24, 24, 27, 0.06);
+  }
+
+  .skill-card:hover {
+    box-shadow: 0 18px 40px rgba(24, 24, 27, 0.1);
+  }
+
+  .skill-badge {
+    background: rgba(124, 58, 237, 0.045);
+  }
+
+  .skill-badge:hover {
+    background: color-mix(in srgb, var(--skill-color) 8%, rgba(255, 255, 255, 0.96));
+  }
+
+  .project-card {
+    box-shadow: 0 10px 30px rgba(24, 24, 27, 0.06);
+  }
+
+  .tag-list span {
+    background: #e4e4e7;
+  }
+
+  .contact-card {
+    background: linear-gradient(120deg, rgba(139, 92, 246, 0.1), rgba(255, 255, 255, 0.92) 50%);
+  }
+
+  .contact-links a {
+    border-bottom-color: var(--border-strong);
   }
 }
 

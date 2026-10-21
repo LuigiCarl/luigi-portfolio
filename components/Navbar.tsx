@@ -19,18 +19,18 @@ export default function Navbar() {
   return (
     <header className="site-header">
       <div className="container nav-inner">
-        <a className="logo" href="#top" aria-label="LCB home">
+        <a className="logo" href="#top" aria-label="LCB home" tabIndex={0}>
           LCB<span>.</span>
         </a>
         <nav className="desktop-nav" aria-label="Primary navigation">
           {links.map((link) => (
-            <a key={link.href} href={link.href}>
+            <a key={link.href} href={link.href} tabIndex={0}>
               {link.label}
             </a>
           ))}
         </nav>
         {hasResume && (
-          <a className="nav-resume" href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+          <a className="nav-resume" href="/resume.pdf" target="_blank" rel="noopener noreferrer" tabIndex={0}>
             View Resume <ArrowUpRight size={15} aria-hidden="true" />
           </a>
         )}
@@ -47,12 +47,12 @@ export default function Navbar() {
       {isOpen && (
         <nav className="mobile-nav" aria-label="Mobile navigation">
           {links.map((link) => (
-            <a key={link.href} href={link.href} onClick={() => setIsOpen(false)}>
+            <a key={link.href} href={link.href} tabIndex={0} onClick={() => setIsOpen(false)}>
               {link.label}
             </a>
           ))}
           {hasResume && (
-            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)}>
+            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" tabIndex={0} onClick={() => setIsOpen(false)}>
               View Resume <ArrowUpRight size={15} aria-hidden="true" />
             </a>
           )}
