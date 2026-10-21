@@ -130,6 +130,12 @@ export const education = [
 ];
 
 export const contactLinks = [
-  { label: "Email", value: "luigi.brezuela@sorsu.edu.ph", href: "mailto:luigi.brezuela@sorsu.edu.ph" },
-  { label: "GitHub", value: "github.com/LuigiCarl", href: "https://github.com/LuigiCarl" },
+  { label: "Email", value: "luigi.brezuela@sorsu.edu.ph", href: "mailto:luigi.brezuela@sorsu.edu.ph", icon: "email" },
+  { label: "GitHub", value: "github.com/LuigiCarl", href: "https://github.com/LuigiCarl", icon: "github" },
+  {
+    label: "LinkedIn",
+    value: "linkedin.com/in/luigi-carl-brezuela-317825445",
+    href: "https://www.linkedin.com/in/luigi-carl-brezuela-317825445",
+    icon: "linkedin",
+  },
 ];

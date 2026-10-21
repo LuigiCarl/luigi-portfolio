@@ -1036,7 +1036,49 @@ h2 {
   color: var(--accent-light);
 }
 
-.contact-links span {
+.contact-badge {
+  display: inline-grid;
+  flex: 0 0 auto;
+  width: 22px;
+  height: 22px;
+  place-items: center;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.contact-badge svg {
+  width: 15px;
+  height: 15px;
+  fill: currentColor;
+}
+
+.contact-badge-github {
+  background: #24292f;
+}
+
+.contact-badge-linkedin {
+  background: #0a66c2;
+}
+
+.contact-badge-gmail {
+  width: 22px;
+  background: #fff;
+}
+
+.contact-badge-gmail svg {
+  width: 18px;
+  height: 14px;
+}
+
+.contact-badge-gmail .gmail-red {
+  fill: #ea4335;
+}
+
+.contact-badge-gmail .gmail-blue {
+  fill: #4285f4;
+}
+
+.contact-links a > span:not(.contact-badge) {
   display: flex;
   min-width: 0;
   flex-direction: column;
