@@ -79,6 +79,21 @@ export const projects: Project[] = [
     featured: true,
   },
   {
+    name: "DevStash",
+    type: "Web",
+    title: "Developer Resource Management Platform",
+    description:
+      "A responsive developer-resource manager for saving, organizing, and quickly finding useful links, with guest access and private authenticated libraries.",
+    stack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Drizzle ORM", "Neon Postgres", "Auth.js"],
+    features: ["Resource bookmarking", "Collections and tags", "Guest and private libraries"],
+    status: "Full-Stack Web Application",
+    screenshots: ["/projects/devstash.png"],
+    screenshotAlt: "DevStash developer resource manager landing page",
+    liveUrl: "https://devstash-gamma-hazel.vercel.app/",
+    githubUrl: "https://github.com/LuigiCarl/devstash",
+    featured: true,
+  },
+  {
     name: "FinanEase",
     type: "Web",
     title: "Personal Finance & Budget Management System",

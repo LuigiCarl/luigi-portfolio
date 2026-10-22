@@ -26,7 +26,7 @@ const technologies = [
   "AWS EC2",
 ] as const;
 
-const projectNames = ["Labada", "FinanEase", "GIMATA", "UNLABEL"] as const;
+const projectNames = ["DevStash", "Labada", "FinanEase", "GIMATA", "UNLABEL"] as const;
 
 function annotate(testInfo: TestInfo, severity: "Critical" | "High" | "Medium" | "Low", suggestedFix: string) {
   testInfo.annotations.push(
@@ -166,6 +166,8 @@ test.describe("Project cards", () => {
     }
 
     await expect(page.getByRole("link", { name: "Expo build evidence for Labada" })).toHaveAttribute("href", /^https:\/\//);
+    await expect(page.getByRole("link", { name: "Live preview of DevStash" })).toHaveAttribute("href", "https://devstash-gamma-hazel.vercel.app/");
+    await expect(page.getByRole("link", { name: "Source code for DevStash" })).toHaveAttribute("href", "https://github.com/LuigiCarl/devstash");
     await expect(page.getByRole("link", { name: "Live preview of FinanEase" })).toHaveAttribute("href", /^https:\/\//);
     await expect(page.getByRole("link", { name: "Live preview of GIMATA" })).toHaveAttribute("href", /^https:\/\//);
     await expect(page.getByRole("link", { name: "Live preview of UNLABEL" })).toHaveAttribute("href", /^https:\/\//);
