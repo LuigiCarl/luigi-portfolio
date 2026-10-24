@@ -18,7 +18,7 @@ export type Project = {
 
 export type Skill = {
   title: string;
-  icon: "brackets" | "server" | "cloud";
+  icon: "brackets" | "server" | "database" | "cloud";
   items: Array<{
     name: string;
     icon: string | null;
@@ -48,6 +48,15 @@ export const skills: Skill[] = [
       { name: "PHP", icon: "devicon:php", fallback: "PHP", color: "#777bb4" },
       { name: "Laravel", icon: "devicon:laravel", fallback: "La", color: "#ff2d20" },
       { name: "REST API Development", icon: null, fallback: "API", color: "#a78bfa" },
+    ],
+  },
+  {
+    title: "Databases & ORM",
+    icon: "database",
+    items: [
+      { name: "PostgreSQL", icon: "devicon:postgresql", fallback: "PG", color: "#336791" },
+      { name: "MySQL", icon: "devicon:mysql", fallback: "SQL", color: "#4479a1" },
+      { name: "Drizzle ORM", icon: "simple-icons:drizzle", fallback: "Dr", color: "#c5f74f" },
     ],
   },
   {
@@ -150,7 +159,13 @@ export const education = [
 ];
 
 export const contactLinks = [
-  { label: "Email", value: "luigi.brezuela@sorsu.edu.ph", href: "mailto:luigi.brezuela@sorsu.edu.ph", icon: "email" },
+  {
+    label: "Email",
+    value: "luigi.brezuela@sorsu.edu.ph",
+    href: "mailto:luigi.brezuela@sorsu.edu.ph?subject=Software%20Development%20Internship%20Inquiry%20-%20Luigi%20Carl%20Brezuela",
+    icon: "email",
+  },
+  { label: "Phone", value: "+63 994 286 8565", href: "tel:+639942868565", icon: "phone" },
   { label: "GitHub", value: "github.com/LuigiCarl", href: "https://github.com/LuigiCarl", icon: "github" },
   {
     label: "LinkedIn",

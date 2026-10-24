@@ -1,13 +1,14 @@
 "use client";
 
 import { Icon } from "@iconify/react";
-import { Braces, CloudCog, Server, Workflow } from "lucide-react";
+import { Braces, CloudCog, Database, Server, Workflow } from "lucide-react";
 import type { CSSProperties } from "react";
 import { skills } from "@/data/portfolio";
 
 const categoryIcons = {
   brackets: Braces,
   server: Server,
+  database: Database,
   cloud: CloudCog,
 };
 
