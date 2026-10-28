@@ -36,8 +36,8 @@ export default function Home() {
                 Explore My Projects <ArrowDownRight size={17} aria-hidden="true" />
               </a>
               {hasResume && (
-                <a className="button button-ghost" href="/resume.pdf" target="_blank" rel="noopener noreferrer">
-                  View Resume <ArrowUpRight size={16} aria-hidden="true" />
+                <a className="button button-ghost" href="/cv.pdf" target="_blank" rel="noopener noreferrer">
+                  View CV <ArrowUpRight size={16} aria-hidden="true" />
                 </a>
               )}
             </div>

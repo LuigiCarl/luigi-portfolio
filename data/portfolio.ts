@@ -79,7 +79,7 @@ export const projects: Project[] = [
     title: "Laundry Service & Delivery Management Platform",
     description:
       "A laundry service management platform supporting customers, shop owners, delivery riders, and administrators through mobile and backend workflows.",
-    stack: ["Expo", "React Native", "TypeScript", "PHP", "Laravel", "Sanctum", "Reverb"],
+    stack: ["Expo", "React Native", "TypeScript", "PHP", "Laravel", "MySQL"],
     features: ["Role-based workflows", "Pickup and delivery orders", "Order status tracking", "Live rider updates", "Order-scoped chat"],
     status: "Capstone Project · Full-Stack Mobile Application",
     screenshots: ["/projects/labadasc.png"],
@@ -93,7 +93,7 @@ export const projects: Project[] = [
     title: "Developer Resource Management Platform",
     description:
       "A responsive developer-resource manager for saving, organizing, and quickly finding useful links, with guest access and private authenticated libraries.",
-    stack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Drizzle ORM", "Neon Postgres", "Auth.js"],
+    stack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "PostgreSQL"],
     features: ["Resource bookmarking", "Collections and tags", "Guest and private libraries"],
     status: "Full-Stack Web Application",
     screenshots: ["/projects/devstash.png"],
@@ -108,7 +108,7 @@ export const projects: Project[] = [
     title: "Personal Finance & Budget Management System",
     description:
       "A personal finance management application for tracking income, expenses, budgets, and financial records through a responsive frontend and Laravel backend API.",
-    stack: ["React", "TypeScript", "Vite", "Tailwind CSS", "Recharts", "PHP", "Laravel", "Sanctum", "REST API", "SQL"],
+    stack: ["React", "TypeScript", "Vite", "Tailwind CSS", "PHP", "Laravel", "REST API", "MySQL"],
     features: ["Authentication", "Income and expense tracking", "Budget planning", "Financial dashboards", "Transaction management"],
     status: "Full-Stack Web Application",
     screenshots: ["/projects/finanease-landing.png", "/projects/finanease-mobile.jpg"],

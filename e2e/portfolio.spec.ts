@@ -94,18 +94,18 @@ test.describe("Navigation and routing", () => {
 
 test.describe("Buttons, documents, and external links", () => {
   test("primary calls to action and resume document are valid", async ({ page }, testInfo) => {
-    annotate(testInfo, "High", "Correct missing CTA targets or restore the resume asset under public/resume.pdf.");
+    annotate(testInfo, "High", "Correct missing CTA targets or restore the resume asset under public/cv.pdf.");
     await page.goto("/");
 
     await expect(page.getByRole("link", { name: /Explore My Projects/ })).toHaveAttribute("href", "#projects");
-    const resumeLinks = page.getByRole("link", { name: /View Resume/ });
+    const resumeLinks = page.getByRole("link", { name: /View (CV|Resume)/ });
     expect(await resumeLinks.count()).toBeGreaterThan(0);
     await expect(resumeLinks.first()).toHaveAttribute("target", "_blank");
     await expect(resumeLinks.first()).toHaveAttribute("rel", /noopener/);
 
-    const resumeResponse = await page.request.get("/resume.pdf");
-    expect(resumeResponse.status()).toBe(200);
-    expect(resumeResponse.headers()["content-type"]).toContain("application/pdf");
+    const cvResponse = await page.request.get("/cv.pdf");
+    expect(cvResponse.status()).toBe(200);
+    expect(cvResponse.headers()["content-type"]).toContain("application/pdf");
   });
 
   test("external links use secure new-tab attributes and parseable URLs", async ({ page }, testInfo) => {

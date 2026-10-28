@@ -68,8 +68,8 @@ export default function Navbar() {
           })}
         </nav>
         {hasResume && (
-          <a className="nav-resume" href="/resume.pdf" target="_blank" rel="noopener noreferrer" tabIndex={0}>
-            View Resume <ArrowUpRight size={15} aria-hidden="true" />
+          <a className="nav-resume" href="/cv.pdf" target="_blank" rel="noopener noreferrer" tabIndex={0}>
+            View CV <ArrowUpRight size={15} aria-hidden="true" />
           </a>
         )}
         <button
@@ -99,8 +99,8 @@ export default function Navbar() {
             );
           })}
           {hasResume && (
-            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" tabIndex={0} onClick={() => setIsOpen(false)}>
-              View Resume <ArrowUpRight size={15} aria-hidden="true" />
+            <a href="/cv.pdf" target="_blank" rel="noopener noreferrer" tabIndex={0} onClick={() => setIsOpen(false)}>
+              View CV <ArrowUpRight size={15} aria-hidden="true" />
             </a>
           )}
         </nav>
