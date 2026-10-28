@@ -7,9 +7,9 @@ const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"]
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://portfolio.luigicarl.tech"),
-  title: "Luigi Carl Brezuela | Full-Stack & Backend Developer",
+  title: "Luigi Carl Brezuela | Aspiring Full-Stack Developer",
   description:
-    "Portfolio of Luigi Carl Brezuela, a BS Information Technology student at Sorsogon State University – Bulan Campus, graduating in 2027 and seeking Software Development & Backend Internship opportunities.",
+    "Portfolio of Luigi Carl Brezuela, a fourth-year BS Information Technology student at Sorsogon State University – Bulan Campus, seeking Software Development Internship opportunities.",
   keywords: [
     "Luigi Carl Brezuela",
     "Luigi Carl",
