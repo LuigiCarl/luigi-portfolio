@@ -476,12 +476,12 @@ def build_cv(filename, photo_path=None, enable_photo=True):
             ]
         ),
         (
-            "<a href='https://gimata.vercel.app/' color='#18181b'><b>GIMATA</b></a> — Fisheries Data Visualization Application",
-            "Web App · PWA  <a href='https://gimata.vercel.app/' color='#4c1d95'><u>[Live Demo]</u></a>",
-            "Technologies: React, TypeScript, Tailwind CSS, Leaflet, PWA",
+            "<a href='https://klinika-web.onrender.com' color='#18181b'><b>Klinika</b></a> — Healthcare Appointment & Clinic Operations Engine",
+            "Web App  <a href='https://klinika-web.onrender.com' color='#4c1d95'><u>[Live]</u></a>  <a href='https://github.com/LuigiCarl/klinika-web' color='#4c1d95'><u>[GitHub]</u></a>",
+            "Technologies: PHP, Laravel, Livewire, PostgreSQL, Docker, Tailwind CSS",
             [
-                "• Transformed coastal survey catch records from Bulan, Sorsogon into an interactive geospatial map and seasonal catch dashboard.",
-                "• Implemented species and seasonal filters, ecological summaries, and offline-capable Progressive Web App (PWA) features.",
+                "• Engineered a concurrency-safe booking engine with atomic slot reservations using PostgreSQL row-level locks.",
+                "• Built an executive clinic KPI analytics dashboard tracking doctor utilization, specialty demand, and queue triage.",
             ]
         ),
         (

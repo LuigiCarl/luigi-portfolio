@@ -120,17 +120,25 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    name: "GIMATA",
+    name: "Klinika",
     type: "Web",
-    title: "Fisheries Data Visualization Application",
+    title: "Healthcare Appointment & Clinic Operations Engine",
     description:
-      "A fisheries data visualization application transforming survey records from Bulan, Sorsogon into interactive maps, seasonal catch dashboards, species profiles, and ecological competition visualizations.",
-    stack: ["React", "TypeScript", "Tailwind CSS", "Leaflet", "Recharts", "Zustand", "Vite", "PWA"],
-    features: ["Catch-survey maps", "Species and season filters", "Monthly catch charts", "Ecology summaries", "Installable PWA"],
-    status: "Web Application · PWA",
-    screenshots: ["/projects/gimata-home.png", "/projects/gimata-map.png"],
-    screenshotAlt: "GIMATA landing page and interactive map",
-    liveUrl: "https://gimata.vercel.app/",
+      "A high-concurrency healthcare booking and clinic operations engine featuring atomic slot reservations under row-level locks, receptionist queue triage, and an administrative analytics suite.",
+    stack: ["PHP", "Laravel", "Livewire", "PostgreSQL", "Docker", "Tailwind CSS"],
+    features: [
+      "Atomic slot reservation engine (zero double-bookings via PostgreSQL locks)",
+      "Admin analytics & KPI dashboard (doctor utilization & specialty demand)",
+      "Live clinic queue triage with automated notifications",
+      "Automated email confirmations with RFC-5545 calendar invites",
+      "1-click evaluation sandbox for Admin, Receptionist, and Patient roles",
+    ],
+    status: "Full-Stack Web Application",
+    screenshots: ["/projects/klinika.png"],
+    screenshotAlt: "Klinika clinic analytics and operations KPI dashboard",
+    liveUrl: "https://klinika-web.onrender.com",
+    githubUrl: "https://github.com/LuigiCarl/klinika-web",
+    featured: true,
   },
   {
     name: "UNLABEL",
@@ -145,6 +153,7 @@ export const projects: Project[] = [
     screenshotAlt: "UNLABEL educational website landing page",
     liveUrl: "https://unlabel-dusky.vercel.app/",
     githubUrl: "https://github.com/LuigiCarl/Unlabel",
+    featured: true,
   },
 ];
 

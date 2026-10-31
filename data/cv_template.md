@@ -38,11 +38,11 @@ Fourth-year Bachelor of Science in Information Technology (BSIT) student at Sors
 - Created a responsive budget tracking dashboard featuring income and expense logging, category budgets, and spending charts.
 - Built and integrated a decoupled Laravel RESTful API backend to securely manage financial records and user transactions.
 
-### 4. GIMATA | Fisheries Data Visualization Application
-*Web Application · PWA*  
-*Technologies: React, TypeScript, Tailwind CSS, Leaflet, PWA*
-- Transformed coastal survey catch records from Bulan, Sorsogon into an interactive geospatial map and seasonal catch dashboard.
-- Implemented species and seasonal filters, ecological summaries, and offline-capable Progressive Web App (PWA) features.
+### 4. Klinika | Healthcare Appointment & Clinic Operations Engine
+*Full-Stack Web Application*  
+*Technologies: PHP, Laravel, Livewire, PostgreSQL, Docker, Tailwind CSS*
+- Engineered a high-concurrency clinic management engine with atomic slot reservations using PostgreSQL row-level locks to guarantee zero double-bookings.
+- Developed an executive analytics & KPI dashboard tracking doctor utilization, specialty demand, lead times, and live receptionist queue triage.
 
 ### 5. UNLABEL | Interactive Educational Website
 *Interactive Web Experience*  
