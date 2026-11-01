@@ -458,8 +458,8 @@ def build_cv(filename, photo_path=None, enable_photo=True):
             ]
         ),
         (
-            "<a href='https://devstash-gamma-hazel.vercel.app/' color='#18181b'><b>DevStash</b></a> — Developer Resource Management Platform",
-            "Web App  <a href='https://devstash-gamma-hazel.vercel.app/' color='#4c1d95'><u>[Live]</u></a>  <a href='https://github.com/LuigiCarl/devstash' color='#4c1d95'><u>[GitHub]</u></a>",
+            "<a href='https://devtash.luigicarl.tech/' color='#18181b'><b>DevTash</b></a> — Developer Resource Management Platform",
+            "Web App  <a href='https://devtash.luigicarl.tech/' color='#4c1d95'><u>[Live]</u></a>  <a href='https://github.com/LuigiCarl/devstash' color='#4c1d95'><u>[GitHub]</u></a>",
             "Technologies: Next.js, React, TypeScript, Tailwind CSS, PostgreSQL",
             [
                 "• Developed a developer bookmarking system to organize, tag, and search technical links with public guest and private user libraries.",

@@ -88,7 +88,7 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    name: "DevStash",
+    name: "DevTash",
     type: "Web",
     title: "Developer Resource Management Platform",
     description:
@@ -97,8 +97,8 @@ export const projects: Project[] = [
     features: ["Resource bookmarking", "Collections and tags", "Guest and private libraries"],
     status: "Full-Stack Web Application",
     screenshots: ["/projects/devstash.png"],
-    screenshotAlt: "DevStash developer resource manager landing page",
-    liveUrl: "https://devstash-gamma-hazel.vercel.app/",
+    screenshotAlt: "DevTash developer resource manager landing page",
+    liveUrl: "https://devtash.luigicarl.tech/",
     githubUrl: "https://github.com/LuigiCarl/devstash",
     featured: true,
   },

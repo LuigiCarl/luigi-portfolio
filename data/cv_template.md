@@ -26,7 +26,7 @@ Fourth-year Bachelor of Science in Information Technology (BSIT) student at Sors
 - Built a cross-platform mobile application supporting 4 user roles (Customers, Shop Owners, Delivery Riders, Administrators).
 - Implemented real-time order tracking, delivery status updates, and in-app chat for active orders; verified EAS builds.
 
-### 2. DevStash | Developer Resource Management Platform
+### 2. DevTash | Developer Resource Management Platform
 *Full-Stack Web Application*  
 *Technologies: Next.js, React, TypeScript, Tailwind CSS, PostgreSQL*
 - Developed a developer bookmarking system to organize, tag, and search technical links with public guest and private user libraries.

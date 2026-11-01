@@ -752,7 +752,8 @@ h2 {
   object-position: center !important;
 }
 
-.project-visual-devstash .project-screenshot-main {
+.project-visual-devstash .project-screenshot-main,
+.project-visual-devtash .project-screenshot-main {
   object-fit: cover;
   object-position: center;
   padding: 0;
