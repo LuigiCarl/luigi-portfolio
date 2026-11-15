@@ -73,7 +73,7 @@ export default function ProjectCard({ project }: { project: Project }) {
           )}
           {project.githubUrl && (
             <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" aria-label={`Source code for ${project.name}`}>
-              <Code2 size={16} aria-hidden="true" /> {project.name === "FinanEase" ? "Frontend Source" : "Source Code"}
+              <Code2 size={16} aria-hidden="true" /> {project.backendGithubUrl ? "Frontend Source" : "Source Code"}
             </a>
           )}
           {project.backendUrl && (

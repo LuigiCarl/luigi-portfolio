@@ -29,7 +29,7 @@ const technologies = [
   "AWS EC2",
 ] as const;
 
-const projectNames = ["DevTash", "Labada", "FinanEase", "Klinika", "UNLABEL"] as const;
+const projectNames = ["DevTash", "Labada", "FinanEase", "Klinikaly", "TruckOps"] as const;
 
 function annotate(testInfo: TestInfo, severity: "Critical" | "High" | "Medium" | "Low", suggestedFix: string) {
   testInfo.annotations.push(
@@ -172,8 +172,8 @@ test.describe("Project cards", () => {
     await expect(page.getByRole("link", { name: "Live preview of DevTash" })).toHaveAttribute("href", "https://devtash.luigicarl.tech/");
     await expect(page.getByRole("link", { name: "Source code for DevTash" })).toHaveAttribute("href", "https://github.com/LuigiCarl/devstash");
     await expect(page.getByRole("link", { name: "Live preview of FinanEase" })).toHaveAttribute("href", /^https:\/\//);
-    await expect(page.getByRole("link", { name: "Live preview of Klinika" })).toHaveAttribute("href", /^https:\/\//);
-    await expect(page.getByRole("link", { name: "Live preview of UNLABEL" })).toHaveAttribute("href", /^https:\/\//);
+    await expect(page.getByRole("link", { name: "Live preview of Klinikaly" })).toHaveAttribute("href", /^https:\/\//);
+    await expect(page.getByRole("link", { name: "Live preview of TruckOps" })).toHaveAttribute("href", /^https:\/\//);
   });
 });
 

@@ -476,8 +476,8 @@ def build_cv(filename, photo_path=None, enable_photo=True):
             ]
         ),
         (
-            "<a href='https://klinika-web.onrender.com' color='#18181b'><b>Klinika</b></a> — Healthcare Appointment & Clinic Operations Engine",
-            "Web App  <a href='https://klinika-web.onrender.com' color='#4c1d95'><u>[Live]</u></a>  <a href='https://github.com/LuigiCarl/klinika-web' color='#4c1d95'><u>[GitHub]</u></a>",
+            "<a href='https://klinikaly.luigicarl.tech/' color='#18181b'><b>Klinikaly</b></a> — Healthcare Appointment & Clinic Operations Engine",
+            "Web App  <a href='https://klinikaly.luigicarl.tech/' color='#4c1d95'><u>[Live]</u></a>  <a href='https://github.com/LuigiCarl/klinika-web' color='#4c1d95'><u>[GitHub]</u></a>",
             "Technologies: PHP, Laravel, Livewire, PostgreSQL, Docker, Tailwind CSS",
             [
                 "• Engineered a concurrency-safe booking engine with atomic slot reservations using PostgreSQL row-level locks.",
@@ -485,12 +485,12 @@ def build_cv(filename, photo_path=None, enable_photo=True):
             ]
         ),
         (
-            "<a href='https://unlabel-dusky.vercel.app/' color='#18181b'><b>UNLABEL</b></a> — Interactive Educational Website",
-            "Interactive Web  <a href='https://unlabel-dusky.vercel.app/' color='#4c1d95'><u>[Live]</u></a>  <a href='https://github.com/LuigiCarl/Unlabel' color='#4c1d95'><u>[GitHub]</u></a>",
-            "Technologies: Next.js, React, TypeScript, Tailwind CSS",
+            "<a href='https://lgatrucking.luigicarl.tech/' color='#18181b'><b>TruckOps</b></a> — Trucking Business &amp; Dispatch Platform",
+            "Web App  <a href='https://lgatrucking.luigicarl.tech/' color='#4c1d95'><u>[Live]</u></a>  <a href='https://github.com/LuigiCarl/truckops-fe' color='#4c1d95'><u>[FE]</u></a>  <a href='https://github.com/LuigiCarl/truckops-be' color='#4c1d95'><u>[BE]</u></a>",
+            "Technologies: Next.js, React, TypeScript, Tailwind CSS, PHP, Laravel, PostgreSQL",
             [
-                "• Designed an interactive educational website exploring gender stereotypes through visual storytelling, quizzes, and a pledge generator.",
-                "• Built responsive UI components and smooth web animations for an engaging learning experience.",
+                "• Engineered a centralized hauling operations and financial system with automated driver/helper payroll calculations.",
+                "• Built trip verification workflows, flat-rate billing reconciliation, and real-time executive cash flow dashboards.",
             ]
         ),
     ]

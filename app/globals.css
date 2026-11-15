@@ -808,11 +808,19 @@ h2 {
   background: #5b21b6;
 }
 
-.project-visual-klinika {
+.project-visual-klinika,
+.project-visual-klinikaly {
   background:
     radial-gradient(circle at 78% 25%, rgba(20, 184, 166, 0.25), transparent 30%),
     radial-gradient(circle at 20% 80%, rgba(16, 185, 129, 0.15), transparent 35%),
     linear-gradient(135deg, #0d1f1d, #101014 65%);
+}
+
+.project-visual-truckops {
+  background:
+    radial-gradient(circle at 75% 25%, rgba(59, 130, 246, 0.25), transparent 32%),
+    radial-gradient(circle at 25% 75%, rgba(37, 99, 235, 0.15), transparent 35%),
+    linear-gradient(135deg, #0e1e38, #101014 65%);
 }
 
 .project-visual-unlabel {
